@@ -30,7 +30,8 @@ const client = new Client({
 });
 
 client.once(Events.ClientReady, async () => {
-  console.log(client.user.username + ' запустился!');
+  const readyAt = new Date().toISOString();
+  console.log(`[Старт] Бот ${client.user.username} (${client.user.id}) запущен в ${readyAt}`);
 
   const rest = new REST().setToken(config.token);
   const commands = commandsData.map((c) => c.data.toJSON());
@@ -136,4 +137,6 @@ if (!config.token) {
   console.error('Токен не задан. Укажите BOT_TOKEN (или DISCORD_TOKEN) в переменных окружения или token в config.json.');
   process.exit(1);
 }
+
+console.log('[Старт] Подключение к Discord...');
 client.login(config.token);

@@ -11,7 +11,7 @@ const {
 } = require('discord.js');
 const { isValidPassport, getDisplayName, getChannelId, FOLDER } = require('./utils.js');
 
-const PROMOTION_CHANNEL_ID = config.channels?.promotion || '1466543267968585905';
+const PROMOTION_CHANNEL_ID = config.channels?.promotion || '1429187754696249435';
 const EMBED_COLOR = 0x2b2d31;
 const SETUP_EMBED_COLOR = 0x3498db; // синяя полоска, как в канале увольнений
 const BUTTON_LABEL_MAX = 80;
@@ -138,8 +138,8 @@ async function sendUprankFromApproval(interaction, applicantUser, applicantDispl
   await channel.send({ content: topLine, embeds: [embed] });
 }
 
-const ROLE_SANG = '1466567326118711296';
-const ROLE_SENIOR_APPROVE = '1466564183741956219';
+const ROLE_SANG = '1382738255249936554';
+const ROLE_SENIOR_APPROVE = '1382738163729956947';
 
 function hasRole(member, roleIds) {
   if (!member?.roles?.cache) return false;
@@ -196,7 +196,7 @@ async function handleFormModalSubmit(interaction) {
   const channel = await interaction.client.channels.fetch(PROMOTION_CHANNEL_ID).catch(() => null);
   if (!channel) return true;
 
-  const ROLE_SENIOR = '1466564183741956219';
+  const ROLE_SENIOR = '1382738163729956947';
   const msg = await channel.send({
     content: `<@&${ROLE_SENIOR}>`,
     embeds: [embed],

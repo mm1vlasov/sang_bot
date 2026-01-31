@@ -1,6 +1,14 @@
 # Секреты и локальная конфигурация
 .env
 .env.*
+deploy.md
+
+# Документация (локальные копии)
+ANALYTICS.md
+DEPLOY.md
+GUIDE.md
+ROLES.md
+
 
 # Зависимости
 node_modules/

@@ -10,7 +10,7 @@ const {
   MessageFlags,
 } = require('discord.js');
 
-const RESIGN_CHANNEL_ID = config.channels?.resign || '1466510929708580985';
+const RESIGN_CHANNEL_ID = config.channels?.resign || '1382738552801984605';
 const EMBED_COLOR = 0x3498db;
 const COLLECTOR_TIME_MS = 60_000;
 const BUTTON_LABEL_MAX = 80;
@@ -135,8 +135,8 @@ async function downloadAttachment(attachment) {
   return { attachment: buf, name };
 }
 
-const ROLE_SANG = '1466567326118711296';
-const ROLE_SENIOR_APPROVE = '1466564183741956219';
+const ROLE_SANG = '1382738255249936554';
+const ROLE_SENIOR_APPROVE = '1382738163729956947';
 
 function hasRole(member, roleIds) {
   if (!member?.roles?.cache) return false;

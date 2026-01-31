@@ -11,8 +11,8 @@ const {
 } = require('discord.js');
 const { isValidPassport, getDisplayName, getChannelId, FOLDER } = require('./utils.js');
 
-const UPRANK_REQUEST_CHANNEL_ID = config.channels?.uprankRequest || '1467093837175586868';
-const ROLE_APPROVE = '1467094710194667634'; // генерал-лейтенант
+const UPRANK_REQUEST_CHANNEL_ID = config.channels?.uprankRequest || '1421826612781121719';
+const ROLE_APPROVE = '1382738094209634444'; // генерал-лейтенант
 const EMBED_COLOR = 0x2b2d31;
 const SETUP_EMBED_COLOR = 0x3498db; // синяя полоска, как в канале увольнений
 const COLLECTOR_TIME_MS = 60_000;
@@ -129,7 +129,7 @@ const allowedApproveRoles = () => config.roles?.uprankRequestApprove || [ROLE_AP
 async function handleOpenForm(interaction) {
   if (interaction.customId !== 'uprank_req_open_form') return false;
 
-  const allowedRoles = config.roles?.uprankRequestSubmit || config.roles?.resignPromotionSubmit || ['1466567326118711296'];
+  const allowedRoles = config.roles?.uprankRequestSubmit || config.roles?.resignPromotionSubmit || ['1382738255249936554'];
   if (!hasRole(interaction.member, allowedRoles)) {
     await interaction.reply({
       content: 'Подавать запрос на повышение может только участник с соответствующей ролью.',
