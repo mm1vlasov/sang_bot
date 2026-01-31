@@ -1,0 +1,22 @@
+{
+    "token": "",
+    "prefix": "/",
+    "clientId": "ВАШ_APPLICATION_ID",
+    "guildId": "ID_ВАШЕГО_СЕРВЕРА",
+    "channels": {
+        "invite": "ID_КАНАЛА_АУДИТА_ПРИЕМА",
+        "uninvite": "ID_КАНАЛА_АУДИТА_УВОЛЬНЕНИЙ",
+        "uprank": "ID_КАНАЛА_АУДИТА_ПОВЫШЕНИЙ",
+        "transfer": "ID_КАНАЛА_АУДИТА_ПЕРЕВОДОВ",
+        "resign": "ID_КАНАЛА_РАПОРТОВ_НА_УВОЛЬНЕНИЕ",
+        "promotion": "ID_КАНАЛА_ЗАПРОСОВ_НА_ПОВЫШЕНИЕ",
+        "uprankRequest": "ID_КАНАЛА_ОТЧЕТОВ_ХАЙ_РАНГ"
+    },
+    "roles": {
+        "commands": ["ID_РОЛИ_1", "ID_РОЛИ_2"],
+        "resignPromotionSubmit": ["ID_РОЛИ_SANG"],
+        "resignPromotionApprove": ["ID_РОЛИ_СТАРШИЙ_СОСТАВ"],
+        "uprankRequestApprove": ["ID_РОЛИ_ГЕНЕРАЛ_ЛЕЙТЕНАНТ"],
+        "inviteRoles": ["ID_РОЛИ_SANG", "ID_РОЛИ_ACADEMY"]
+    }
+}
